@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/Dashbord.css">
+    <link rel="stylesheet" href="../assets/build/output.css">
+    
+    <title>Dashbord</title>
+</head>
+<body>
+    <section>
+<div class="sidenav">
+<img src="../assets/image/wtlogo.png"  alt="">
+  <a href="#">Command</a>
+  <a href="#">Categories</a>
+  <a href="#">Products</a>
+  <a href="#">Clients</a>
+</div>
+</section>
+<section class="main">
+  <!-- <div>
+    <table class="clients" border="1">
+      <tr>
+        <th>name</th>
+        <th>phone</th>
+        <th>adresse</th>
+        <th>city</th>
+        <th>email</th>
+      </tr>
+      <tr>
+        <td>Achchaimae</td>
+        <td>06123456</td>
+        <td>somewhere somehow anywhere</td>
+        <td>somehow</td>
+        <td>Achchaimae@gmail.com</td>
+      </tr>
+    </table>
+  </div> -->
+   <div class="flex flex-col">
+    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+        <div class="overflow-hidden">
+          <table class="min-w-full">
+            <thead class="bg-white border-b">
+              <tr>
+                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                  #
+                </th>
+                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                  First
+                </th>
+                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                  Last
+                </th>
+                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                  Handle
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  Mark
+                </td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  Otto
+                </td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  @mdo
+                </td>
+              </tr>
+              <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2</td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  Jacob
+                </td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  Thornton
+                </td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  @fat
+                </td>
+              </tr>
+              <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">3</td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  Larry
+                </td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  Wild
+                </td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  @twitter
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container flex justify-center mx-auto">
+    <div class="flex flex-col">
+        <div class="w-full">
+            <div class="border-b border-gray-200 shadow">
+                <table class="divide-y divide-gray-300 ">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                ID
+                            </th>
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Name
+                            </th>
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Email
+                            </th>
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Created_at
+                            </th>
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Edit
+                            </th>
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Delete
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-300">
+                        <tr class="whitespace-nowrap">
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-900">
+                                    Jon doe
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-500">jhondoe@example.com</div>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                2021-1-12
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="px-4 py-1 text-sm text-blue-600 bg-blue-200 rounded-full">Edit</a>
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="px-4 py-1 text-sm text-red-400 bg-red-200 rounded-full">Delete</a>
+                            </td>
+                        </tr>
+                        <tr class="whitespace-nowrap">
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-900">
+                                    Jon doe
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-500">jhondoe@example.com</div>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                2021-1-12
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="px-4 py-1 text-sm text-blue-600 bg-blue-200 rounded-full">Edit</a>
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="px-4 py-1 text-sm text-red-400 bg-red-200 rounded-full">Delete</a>
+                            </td>
+                        </tr>
+                        <tr class="whitespace-nowrap">
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                1
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-900">
+                                    Jon doe
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-500">jhondoe@example.com</div>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                2021-1-12
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="px-4 py-1 text-sm text-blue-600 bg-blue-200 rounded-full">Edit</a>
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="px-4 py-1 text-sm text-red-400 bg-red-200 rounded-full">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+   
+</body>
+</html> 

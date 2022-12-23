@@ -521,28 +521,24 @@ video {
   margin: 1rem;
 }
 
-.m-5 {
-  margin: 1.25rem;
-}
-
-.m-7 {
-  margin: 1.75rem;
-}
-
 .m-6 {
   margin: 1.5rem;
 }
 
-.m-8 {
-  margin: 2rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .h-36 {
@@ -561,20 +557,12 @@ video {
   width: 4rem;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
-.w-6\/12 {
-  width: 50%;
-}
-
 .w-8\/12 {
   width: 66.666667%;
 }
 
-.w-8 {
-  width: 2rem;
+.min-w-full {
+  min-width: 100%;
 }
 
 .flex-row {
@@ -585,6 +573,10 @@ video {
   flex-direction: column;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -593,12 +585,20 @@ video {
   justify-content: space-around;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.overflow-hidden {
+  overflow: hidden;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-lg {
@@ -609,12 +609,25 @@ video {
   border-radius: 0.375rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-2 {
   border-width: 2px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-solid {
   border-style: solid;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-blue-800 {
@@ -657,6 +670,11 @@ video {
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
@@ -664,6 +682,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-1 {
@@ -674,8 +696,37 @@ video {
   padding: 0.75rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-6xl {
@@ -692,17 +743,26 @@ video {
   font-weight: 700;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-medium {
   font-weight: 500;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .text-blue-800 {
@@ -730,12 +790,25 @@ video {
   color: rgb(22 163 74 / var(--tw-text-opacity));
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-blue-800:hover {
@@ -756,6 +829,30 @@ video {
 @media not all and (min-width: 1024px) {
   .max-lg\:hidden {
     display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:-mx-6 {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:-mx-8 {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
