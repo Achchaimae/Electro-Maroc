@@ -1,5 +1,4 @@
 <?php
-//define("PROJ_DIR", dirname(__FILE__));
 
 require_once 'Controller/LoginController.php';
 require_once 'Model/LoginModel.php';
