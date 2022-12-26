@@ -598,3 +598,6 @@ background: linear-gradient(90deg, rgba(118,118,252,1) 35%, rgba(167,240,255,1) 
   /* align-items: center; */
   width: 100%;
 }
+.categ-nav{
+  width: 70vw;;
+}
