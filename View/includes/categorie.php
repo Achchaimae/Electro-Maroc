@@ -14,6 +14,9 @@
     <div class="container flex justify-center mx-auto">
         <div class="flex flex-col">
             <div class="w-full">
+            
+                 <a href="#" class="px-4 py-1 text-sm text-green-400 bg-green-200 rounded-full">add</a>
+                              
                 <div class="border-b border-gray-200 shadow">
                     <table class="divide-y divide-gray-300 ">
                         <thead class="bg-gray-50">
@@ -34,7 +37,7 @@
                                     Edit
                                 </th>
                                 <th class="px-6 py-2 text-xs text-gray-500">
-                                    Delete
+                                    Hide
                                 </th>
                             </tr>
                         </thead>
@@ -58,7 +61,7 @@
                                     <a href="#" class="px-4 py-1 text-sm text-blue-600 bg-blue-200 rounded-full">Edit</a>
                                 </td>
                                 <td class="px-6 py-4">
-                                    <a href="#" class="px-4 py-1 text-sm text-red-400 bg-red-200 rounded-full">Delete</a>
+                                    <a href="#" class="px-4 py-1 text-sm text-red-400 bg-red-200 rounded-full">Hide</a>
                                 </td>
                             </tr>
                             <tr class="whitespace-nowrap">
@@ -80,7 +83,7 @@
                                     <a href="#" class="px-4 py-1 text-sm text-blue-600 bg-blue-200 rounded-full">Edit</a>
                                 </td>
                                 <td class="px-6 py-4">
-                                    <a href="#" class="px-4 py-1 text-sm text-red-400 bg-red-200 rounded-full">Delete</a>
+                                    <a href="#" class="px-4 py-1 text-sm text-red-400 bg-red-200 rounded-full">hide</a>
                                 </td>
                             </tr>
                             <tr class="whitespace-nowrap">
@@ -102,8 +105,9 @@
                                     <a href="#" class="px-4 py-1 text-sm text-blue-600 bg-blue-200 rounded-full">Edit</a>
                                 </td>
                                 <td class="px-6 py-4">
-                                    <a href="#" class="px-4 py-1 text-sm text-red-400 bg-red-200 rounded-full">Delete</a>
+                                    <a href="#" class="px-4 py-1 text-sm text-red-400 bg-red-200 rounded-full">Hide</a>
                                 </td>
+                                
                             </tr>
                         </tbody>
                     </table>

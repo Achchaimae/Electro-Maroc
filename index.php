@@ -1,12 +1,10 @@
 <?php
 // Path: index.php
 session_start() ;
-// require_once 'Model/LoginModel.php';
-// include 'Controller/CategorieController.php';
-// include 'Controller/CommandeController.php';
-// include 'Controller/LoginController.php';
+
 require_once 'Controller/LoginController.php';
 include 'Controller/ProductController.php';
+include 'Controller/CategorieController.php';
 
 // $commande = new CommandeController();
 // $login = new LoginController();
@@ -52,33 +50,77 @@ if(isset($_POST["email"])&&isset($_POST["password"])){
         header("location:View/Dashbord.php");
             //   include_once "View/admin.php";
         }else{
+
             header("location:View/login.php");
-            //
-         echo "alert('email or password is incorrect');";
+
+    
         }
     }else{
         include_once "View/home.php";
     }
         
 //ajouter produit
-if(isset($_POST["nom"])&&isset($_POST["prix"])&&isset($_POST["categorie"])&&isset($_POST["description"])){
-    $nom=$_POST["nom"];
-    $prix=$_POST["prix"];
-    $categorie=$_POST["categorie"];
+// $ref,$libelle,$code_barre,$prix_achat,$prix_final,$prix_offre,$description,$photo,$categorie_id
+if(isset($_POST["ajouterP"])){
+    $ref=$_POST["ref"];
+    $libelle=$_POST["libelle"];
+    $code_barre=$_POST["code_barre"];
+    $prix_achat=$_POST["prix_achat"];
+    $prix_final=$_POST["prix_final"];
+    $prix_offre=$_POST["prix_offre"];
     $description=$_POST["description"];
-    $product->addProduct($nom,$prix,$categorie,$description);
+    $photo=$_POST["photo"];
+    $categorie_id=$_POST["categorie_id"];
+    $product->addProduct($ref,$libelle,$code_barre,$prix_achat,$prix_final,$prix_offre,$description,$photo,$categorie_id);
     header("location:View/Dashbord.php");
 }
-//ajouter categorie
+//update produit
+if(isset($_POST["updateP"])){
+    $ref=$_POST["ref"];
+    $libelle=$_POST["libelle"];
+    $code_barre=$_POST["code_barre"];
+    $prix_achat=$_POST["prix_achat"];
+    $prix_final=$_POST["prix_final"];
+    $prix_offre=$_POST["prix_offre"];
+    $description=$_POST["description"];
+    $photo=$_POST["photo"];
+    $categorie_id=$_POST["categorie_id"];
+    $product->updateProduct($ref,$libelle,$code_barre,$prix_achat,$prix_final,$prix_offre,$description,$photo,$categorie_id);
+    header("location:View/Dashbord.php");
+}
+//delete produit
+if(isset($_GET["deleteP"])){
+    echo "delete";
+    $id = $_GET["id"];
+    $ProduitController->deleteproduit($id);
+    require_once 'View/admin.php';
+    
+}
 
-if(isset($_POST["nomCategorie"])&&isset($_POST["descriotion"])&&isset($_POST["photo"])){
+//ajouter categorie
+if(isset($_POST["ajouterC"])){
     $nom=$_POST["nomCategorie"];
     $description=$_POST["description"];
     $photo=$_POST["photo"];
     $categorie->addCategorie($nomCategorie);
     header("location:View/Dashbord.php");
 }
-require 'View/home.php';
+//update categorie
+if(isset($_POST["updateC"])){
+    $nom=$_POST["nomCategorie"];
+    $description=$_POST["description"];
+    $photo=$_POST["photo"];
+    $categorie->updateCategorie($nomCategorie);
+    header("location:View/Dashbord.php");
+}
+//delete categorie
+if(isset($_GET["deleteC"])){
+    
+    $id = $_GET["id"];
+    $categorie->deleteCategorie($id);
+    require_once 'View/admin.php';
+    
+}
 
 
 

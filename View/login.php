@@ -1,3 +1,11 @@
+<?php 
+  if(!isset($_SESSION['email'])){
+    echo '<script>alert("Login failed")</script>';
+  }
+  else{
+    header('Location: ../View/Dashbord.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

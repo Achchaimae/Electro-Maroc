@@ -7,7 +7,7 @@ class ProductController
     {
         $this->product = new ProductModel();
     }
-    public function Ajouter($ref,$libelle,$code_barre,$prix_achat,$prix_final,$prix_offre,$description,$photo,$categorie_id)
+    public function addProduct($ref,$libelle,$code_barre,$prix_achat,$prix_final,$prix_offre,$description,$photo,$categorie_id)
     {
         $this->product->Ajouter($ref,$libelle,$code_barre,$prix_achat,$prix_final,$prix_offre,$description,$photo,$categorie_id);
     }
@@ -21,7 +21,7 @@ class ProductController
         $result = $this->product->getproduit($id);
         return $result;
     }
-    public function updateproduit($ref,$libelle,$code_barre,$prix_achat,$prix_final,$prix_offre,$description,$photo,$categorie_id)
+    public function updateProduct($ref,$libelle,$code_barre,$prix_achat,$prix_final,$prix_offre,$description,$photo,$categorie_id)
     {
         $this->product->updateproduit($ref,$libelle,$code_barre,$prix_achat,$prix_final,$prix_offre,$description,$photo,$categorie_id);
     }

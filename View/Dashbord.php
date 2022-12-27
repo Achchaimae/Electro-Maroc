@@ -16,35 +16,26 @@
     <section>
 <div class="sidenav">
 <img src="../assets/image/wtlogo.png"  alt="">
-  <a href="#">Command</a>
-  <a href="categorie.php">Categories</a>
-  <a href="#">Products</a>
-  <a href="#">Clients</a>
+  <a href="#commande">Command</a>
+  <a href="#categorie">Categories</a>
+  <a href="#product">Products</a>
+  <a href="#client">Clients</a>
   <a href="../index.php?a=log"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
 </div>
 </section>
 <section class="main">
-  <!-- <div>
-    <table class="clients" border="1">
-      <tr>
-        <th>name</th>
-        <th>phone</th>
-        <th>adresse</th>
-        <th>city</th>
-        <th>email</th>
-      </tr>
-      <tr>
-        <td>Achchaimae</td>
-        <td>06123456</td>
-        <td>somewhere somehow anywhere</td>
-        <td>somehow</td>
-        <td>Achchaimae@gmail.com</td>
-      </tr>
-    </table>
-  </div> -->
-   
-  
-  
+  <div id="categorie">
+   <?php include "includes/categorie.php"; ?>
+  </div>
+  <div id="client">
+    <?php include "includes/client.php"; ?>
+  </div>
+  <div id="product">
+    <?php include "includes/product.php"; ?>
+  </div>
+  <div id="command">
+    <?php include "includes/commande.php"; ?>
+  </div>
 </section>
    
 </body>
