@@ -17,7 +17,7 @@
      <section class="hero ">
         <div class="left-nav">
              <div class="logo">
-                <a href="home.php"><img src="../assets/image/mobile logo.png" alt="logo"></a>
+                <a href="../index.php"><img src="../assets/image/mobile logo.png" alt="logo"></a>
              </div>
         <!-- <div>
             <a href="home.php"><i class="fa-solid fa-house"></i></a>
@@ -50,7 +50,7 @@
             <form action="../index.php" class="login-form" method="POST">
                 <input type="email" name="email" placeholder="Email">
                 <input type="password" name="password" placeholder="Password">
-                <input type="submit" name="login" value="Login">
+                <input type="submit" name="login" value="Login" class="w-fit hover:bg-blue-800 hover:text-white">
              </form>
              <div  class="sm-btn" class="flex-col justify-around ">
                 <button><i class="fa-brands fa-google"></i></button>
