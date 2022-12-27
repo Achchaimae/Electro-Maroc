@@ -1,11 +1,11 @@
 <?php
-include_once '../Model/ProcuctModel.php';
+include_once 'Model/ProductModel.php';
 class ProductController
 {
    protected $product;
     public function __construct()
     {
-        $this->product = new Product();
+        $this->product = new ProductModel();
     }
     public function Ajouter($ref,$libelle,$code_barre,$prix_achat,$prix_final,$prix_offre,$description,$photo,$categorie_id)
     {

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to CSS file -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- link tailwind css -->
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/build/output.css">
+    <link rel="stylesheet" href="assets/build/output.css">
     <!-- link to font awesome -->
     <script src="https://kit.fontawesome.com/93e0a23dda.js" crossorigin="anonymous"></script>
     <title>home</title>
@@ -17,7 +17,7 @@
      <section class="hero ">
         <div class="left-nav">
             <div class="logo">
-               <a href="home.php"><img src="../assets/image/mobile logo.png" alt="logo"></a>
+               <a href="#"><img src="assets/image/mobile logo.png" alt="logo"></a>
             </div>
         
         </div>
@@ -170,24 +170,24 @@
                 </select>
             </div> -->
             <div>
-                <b><a href="allproduct.php">categorie</a></b>
+                <b><a href="View/allproduct.php">categorie</a></b>
             </div>
             
         </div>
         <div>
-            <b><a href="Contact.php">Contact Us</a></b>
+            <b><a href="View/Contact.php">Contact Us</a></b>
         </div>
         <div>
-            <b><a href="about.php">About Us</a></b>
+            <b><a href="View/about.php">About Us</a></b>
         </div>
         <div class="icons"> 
             <div class="icon-item">
-                <a href="login.php">
+                <a href="View/login.php">
                     <i class="fa-solid fa-user"></i>
                 </a>
             </div>
             <div>
-                <a href="cart.php">
+                <a href="View/cart.php">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </a>
             </div>
@@ -201,48 +201,48 @@
         <!-- <div class="all-categories" >
             <div class="categ-item ease-in-out duration-300">
                 <p>laptop</p>
-                <img src="../assets/image/laptop.png" alt="laptop">
+                <img src="assets/image/laptop.png" alt="laptop">
             </div>
             <div class="categ-item ease-in-out duration-300">
                 <p>camera</p>
-                <img src="../assets/image/camera.png" alt="mobile">
+                <img src="assets/image/camera.png" alt="mobile">
             </div>
             <div class="categ-item ease-in-out duration-300 access-catego">
                 <p>Accessories</p>
-                <img src="../assets/image/accessories.png" alt="headphone">
+                <img src="assets/image/accessories.png" alt="headphone">
             </div>
             <div class="categ-item ease-in-out duration-300 tv-catego">
                 <p>TV</p>
-                <img src="../assets/image/tv.png" alt="mobile">
+                <img src="assets/image/tv.png" alt="mobile">
             </div>
             <div class="categ-item ease-in-out duration-300 headset-catego">
                 <p>Headphones</p>
-                <img src="../assets/image/headset.png" alt="mobile">
+                <img src="assets/image/headset.png" alt="mobile">
             </div>
             <div class="categ-item ease-in-out duration-300">
                 <p>Storage</p>
-                <img src="../assets/image/storage.png" alt="mobile">
+                <img src="assets/image/storage.png" alt="mobile">
             </div>
             <div class="categ-item ease-in-out duration-300">
                 <p>Home Theater</p>
-                <img src="../assets/image/homeset.png" alt="mobile">
+                <img src="assets/image/homeset.png" alt="mobile">
             </div>
         </div>   -->
     </section>
     <section class="news" >
         <div class="mini-sold" >
             <div class="bg-gray-700 rounded w-36 h-36">
-                <img src="../assets/image/annonce2.png" alt="annonce">
+                <img src="assets/image/annonce2.png" alt="annonce">
                 <p class="bg-gray-800 text-white text-center rounded">JBL Tour One </p>
             </div>
             <div class=" bg-teal-500 rounded w-36 h-36">
-                <img src="../assets/image/annonce3.png" alt="annonce">
+                <img src="assets/image/annonce3.png" alt="annonce">
                 <p class="bg-teal-900 text-white text-center rounded">boat Rockerz 255 </p>
 
             </div>
         </div>
         <div class="big-sold">
-            <img src="../assets/image/annonce.png" alt="annonce">
+            <img src="assets/image/annonce.png" alt="annonce">
             <div>
                 <p>LG GRAM I7 </p><br>
                 <p>12th Gen Core i7 / Win11 / Microsoft 365</p><br>
@@ -257,14 +257,14 @@
                 <p>Today's deals</p>
             </div>
             <div class="indicator m-2">
-                <a href="allproduct.php">View all</a>
+                <a href="View/allproduct.php">View all</a>
             </div>
         </div>
         
         <div class="new-deals">
             <div class="deals">
                 <div class="deal-comp">
-                    <img src="../assets/image/deal1.png" alt="deal 1">
+                    <img src="assets/image/deal1.png" alt="deal 1">
                     <p>Zebronics ZEB-JUKE BAR DOLBY ATMOS Home Theater With Subwoofer</p>
                     <div class="deal-price">
                         <p>259 $</p>
@@ -274,7 +274,7 @@
             </div>
             <div class="deals">
                 <div class="deal-comp">
-                <img src="../assets/image/cameraDeal.png" alt="deal 1">
+                <img src="assets/image/cameraDeal.png" alt="deal 1">
                 <p>Sony Alpha ILCE 6600M 24.2 MP Mirrorless Digital SLR Camera with 18-135 mm Zoom Lens</p>
                 <div class="deal-price">
                     <p>259 $</p>
@@ -282,20 +282,20 @@
                 </div>
                 <div class="deals-sides">
                     <div class="sides">
-                        <img src="../assets/image/camera3.png" alt="camera deal">
+                        <img src="assets/image/camera3.png" alt="camera deal">
                     </div>
                     <div class="sides">
-                        <img src="../assets/image/camera4.png" alt="camera deal">
+                        <img src="assets/image/camera4.png" alt="camera deal">
                     </div>
                     <div class="sides">
-                        <img src="../assets/image/camera2.png" alt="camera deal">
+                        <img src="assets/image/camera2.png" alt="camera deal">
                     </div>
                 </div>
             </div> 
             </div>
             <div class="deals">
                 <div class="deal-comp">
-                <img src="../assets/image/tvdeal.png" alt="deal 1" style="width: 9rem;">
+                <img src="assets/image/tvdeal.png" alt="deal 1" style="width: 9rem;">
                 <p>OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1</p>
                 <div class="deal-price">
                     <p>399 $</p>
@@ -303,20 +303,20 @@
                 </div>
                 <div class="deals-sides">
                     <div class="sides">
-                        <img src="../assets/image/tvdeal2.png" alt="camera deal">
+                        <img src="assets/image/tvdeal2.png" alt="camera deal">
                     </div>
                     <div class="sides">
-                        <img src="../assets/image/tvdeal3.png" alt="camera deal">
+                        <img src="assets/image/tvdeal3.png" alt="camera deal">
                     </div>
                     <div class="sides">
-                        <img src="../assets/image/remote.png" alt="camera deal">
+                        <img src="assets/image/remote.png" alt="camera deal">
                     </div>
                 </div>
             </div> 
             </div>
             <div class="deals">
                 <div class="deal-comp">
-                <img src="../assets/image/laptopdeal.png" alt="deal 1">
+                <img src="assets/image/laptopdeal.png" alt="deal 1">
                 <p>Lenovo Legion 5 11th Gen Intel Core i7 15.6"(39.62cm) FHD IPS Gaming Laptop</p>
                 <div class="deal-price">
                     <p>599 $</p>
@@ -324,13 +324,13 @@
                 </div>
                 <div class="deals-sides">
                     <div class="sides">
-                        <img src="../assets/image/pcdeal1.png" alt="camera deal">
+                        <img src="assets/image/pcdeal1.png" alt="camera deal">
                     </div>
                     <div class="sides">
-                        <img src="../assets/image/pcdeal2.png" alt="camera deal">
+                        <img src="assets/image/pcdeal2.png" alt="camera deal">
                     </div>
                     <div class="sides">
-                        <img src="../assets/image/pcdeal3.png" alt="camera deal">
+                        <img src="assets/image/pcdeal3.png" alt="camera deal">
                     </div>
                 </div>
             </div> 
@@ -342,27 +342,27 @@
                     <p>headphones</p>
                 </div>
                 <div class="indicator m-2">
-                    <a href="allproduct.php">View all</a>
+                    <a href="View/allproduct.php">View all</a>
                 </div>
             </div>
             <div class="headset-cat">
                 <div class="headset-comp">
-                    <img src="../assets/image/headset1.png" alt="headset">
+                    <img src="assets/image/headset1.png" alt="headset">
                     <p>Zebronics ZEB-JUKE BAR DOLBY ATMOS Home Theater With Subwoofer</p>
                     <p>559 $</p>
                 </div>
                 <div class="headset-comp">
-                    <img src="../assets/image/headset2.png" alt="headset">
+                    <img src="assets/image/headset2.png" alt="headset">
                     <p>Zebronics ZEB-JUKE BAR DOLBY ATMOS Home Theater With Subwoofer</p>
                     <p>59 $</p>
                 </div>
                 <div class="headset-comp">
-                    <img src="../assets/image/headset3.png" alt="headset">
+                    <img src="assets/image/headset3.png" alt="headset">
                     <p>Zebronics ZEB-JUKE BAR DOLBY ATMOS Home Theater With Subwoofer</p>
                     <p>259 $</p>
                 </div>
                 <div class="headset-comp">
-                    <img src="../assets/image/headset4.png" alt="headset">
+                    <img src="assets/image/headset4.png" alt="headset">
                     <p>Zebronics ZEB-JUKE BAR DOLBY ATMOS Home Theater With Subwoofer</p>
                     <p>159 $</p>
                 </div>
@@ -379,22 +379,22 @@
             </div>
             <div class="headset-cat">
                 <div class="headset-comp">
-                    <img src="../assets/image/accessorie1.png" alt="accessorie">
+                    <img src="assets/image/accessorie1.png" alt="accessorie">
                     <p>Zebronics ZEB-JUKE BAR DOLBY ATMOS Home Theater With Subwoofer</p>
                     <p>559 $</p>
                 </div>
                 <div class="headset-comp">
-                    <img src="../assets/image/accessorie2.png" alt="accessorie">
+                    <img src="assets/image/accessorie2.png" alt="accessorie">
                     <p>Zebronics ZEB-JUKE BAR DOLBY ATMOS Home Theater With Subwoofer</p>
                     <p>59 $</p>
                 </div>
                 <div class="headset-comp">
-                    <img src="../assets/image/accessorie3.png" alt="accessorie">
+                    <img src="assets/image/accessorie3.png" alt="accessorie">
                     <p>Zebronics ZEB-JUKE BAR DOLBY ATMOS Home Theater With Subwoofer</p>
                     <p>259 $</p>
                 </div>
                 <div class="headset-comp">
-                    <img src="../assets/image/accessorie4.png" alt="accessorie">
+                    <img src="assets/image/accessorie4.png" alt="accessorie">
                     <p>Zebronics ZEB-JUKE BAR DOLBY ATMOS Home Theater With Subwoofer</p>
                     <p>159 $</p>
                 </div>
@@ -405,7 +405,7 @@
         <footer class="footer">
             <div class="footer__addr">
               <h1 class="footer__logo">
-                <img src="../assets/image/mobile logo.png" alt="">
+                <img src="assets/image/mobile logo.png" alt="">
               </h1>
                   
               <h2><b>Contact</b></h2>

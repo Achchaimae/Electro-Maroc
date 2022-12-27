@@ -17,7 +17,7 @@
      <section class="hero ">
         <div class="left-nav">
             <div class="logo">
-              <a href="home.php"><img src="../assets/image/mobile logo.png" alt="logo"></a>
+              <a href="../index.php"><img src="../assets/image/mobile logo.png" alt="logo"></a>
             </div>
         
         </div>

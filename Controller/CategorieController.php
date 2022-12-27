@@ -1,6 +1,6 @@
 <?php
-include_once '../Model/CategorieModel.php';
-class ProductController
+include_once 'Model/CategorieModel.php';
+class CategorieController
 {
    protected $categorie;
     public function __construct()

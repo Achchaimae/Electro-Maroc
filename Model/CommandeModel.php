@@ -1,6 +1,6 @@
 <?php
-include_once '../classes/Database.php';
-class DemandesModel extends dbh{
+include_once 'classes/Database.php';
+class CommandeModel extends dbh{
 
     public function listCommande(){
 
