@@ -2,7 +2,6 @@
  include ('../Controller/ProductController.php');
     $produit = new ProductController();
     $listproduit = $produit->getproduit($_GET['id']);
-    
  ?>
 <!DOCTYPE html>
 <html lang="en">

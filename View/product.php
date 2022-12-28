@@ -126,8 +126,10 @@
                 <option value="9">9</option>
                 <option value="10">10</option>
             </select>
-            <button class="border-solid border-2 border-blue-800 p-2 rounded-lg hover:bg-blue-800 hover:text-white">add to cart</button>
-            <button class="bg-blue-800 text-white rounded p-3 hover:bg-blue-900">Buy Now</button>
+            <button class="border-solid border-2 border-blue-800 p-2 rounded-lg hover:bg-blue-800 hover:text-white">
+                <a href="cart.php">add to cart</a> 
+            </button>
+            <button class="bg-blue-800 text-white rounded p-3 hover:bg-blue-900" onclick="alert('Your order is placed')">Buy Now</button>
         </div>
     </div>
     <div class=" w-8/12 m-6 ">
