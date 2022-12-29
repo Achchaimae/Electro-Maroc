@@ -15,41 +15,6 @@
 </head>
 <body>
      <?php include 'includes/header.php'; ?>
-    <section class="categrories">
-        <!-- <div class="title m-2">
-            <p>categories</p>
-        </div> -->
-
-        <!-- <div class="all-categories" >
-            <div class="categ-item ease-in-out duration-300">
-                <p>laptop</p>
-                <img src="assets/image/laptop.png" alt="laptop">
-            </div>
-            <div class="categ-item ease-in-out duration-300">
-                <p>camera</p>
-                <img src="assets/image/camera.png" alt="mobile">
-            </div>
-            <div class="categ-item ease-in-out duration-300 access-catego">
-                <p>Accessories</p>
-                <img src="assets/image/accessories.png" alt="headphone">
-            </div>
-            <div class="categ-item ease-in-out duration-300 tv-catego">
-                <p>TV</p>
-                <img src="assets/image/tv.png" alt="mobile">
-            </div>
-            <div class="categ-item ease-in-out duration-300 headset-catego">
-                <p>Headphones</p>
-                <img src="assets/image/headset.png" alt="mobile">
-            </div>
-            <div class="categ-item ease-in-out duration-300">
-                <p>Storage</p>
-                <img src="assets/image/storage.png" alt="mobile">
-            </div>
-            <div class="categ-item ease-in-out duration-300">
-                <p>Home Theater</p>
-                <img src="assets/image/homeset.png" alt="mobile">
-            </div>
-        </div>   -->
     </section>
     <section class="news" >
         <div class="mini-sold" >
