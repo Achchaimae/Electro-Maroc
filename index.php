@@ -60,7 +60,7 @@ if(isset($_POST["email"])&&isset($_POST["password"])){
     }
         
 //ajouter produit
-// $ref,$libelle,$code_barre,$prix_achat,$prix_final,$prix_offre,$description,$photo,$categorie_id
+// admin stuff
 if(isset($_POST["ajouterP"])){
     $ref=$_POST["ref"];
     $libelle=$_POST["libelle"];
@@ -122,5 +122,14 @@ if(isset($_GET["deleteC"])){
     
 }
 
-
+//client stuff
+//list produit
+if(isset($_GET["ascend"])){
+    $product->listProductAsc();
+    require_once 'View/allproduct.php';
+}
+if(isset($_GET["descend"])){
+    $product->listProductDesc();
+    require_once 'View/allproduct.php';
+}
 

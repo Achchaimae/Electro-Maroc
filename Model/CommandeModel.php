@@ -28,6 +28,13 @@ class CommandeModel extends dbh{
         $stmt->execute();
         
     }
+    public function hide($id){
+        
+        $sql = "update commande set status = 0 where id=$id";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute();
+        
+    }
     public function saveCommande($date_creation,$date_envoi,$date_livraison,$client_id,$prix_unitaire,$quantite,$prix_total_produit,$prix_total_commande){
         
         $sql = "insert into commande (date_creation,date_envoi,date_livraison,client_id,prix_unitaire,quantite,prix_total_produit,prix_total_commande) values (?,?,?,?,?,?,?,?)";
@@ -35,16 +42,7 @@ class CommandeModel extends dbh{
         $stmt->execute([$date_creation,$date_envoi,$date_livraison,$client_id,$prix_unitaire,$quantite,$prix_total_produit,$prix_total_commande]);
         
     }
-    public function saveDemande($nom_complet,$class,$age,$email,$id_club){
-        
-        $sql = "insert into demande (nom_complet,class,age,email,id_club) values (?,?,?,?,?)";
-        $stmt = $this->connect()->prepare($sql);
-        $stmt->execute([$nom_complet,$class,$age,$email,$id_club]);
-        
-    }
-
-    
-
+ 
 } 
 
 

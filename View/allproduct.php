@@ -29,8 +29,8 @@ $listproduit = $produit->listproduit();
 
         <select id="countries" class="my-auto w-1/6 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             <option selected>PRICE</option>
-            <option value="DE">Dessendent</option>
-            <option value="AC">Assendenet</option>
+            <option value="AC"><a href="../index.php?c=ascend">Assendent</a> </option>
+            <option value="DE"><a href="../index.php?c=descend">Dessendent</a> </option>
 
         </select>
         <select id="countries" class="my-auto w-3/5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
@@ -45,7 +45,7 @@ $listproduit = $produit->listproduit();
     <section class="bg-blue-100 flex flex-row flex-wrap justify-center m-4 items-center gap-7">
 
         <?php foreach ($listproduit as $key => $value) { ?>
-            
+
             <div class="w-full h-auto max-w-sm  py-4 bg-white rounded-lg shadow-md my-auto ">
                 <a href="product.php" class="flex justify-center">
                     <img class="p-8 rounded-t-lg -center" src="../assets/image/accessorie2.png " alt="product image" />
@@ -78,7 +78,7 @@ $listproduit = $produit->listproduit();
                         <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
                     </div>
                     <div class="flex items-center justify-between">
-                        <span class="text-3xl font-bold text-gray-900 dark:text-black"><?php echo $value['prix_offre'] ?></span>
+                        <span class="text-3xl font-bold text-gray-900 dark:text-black"><?php echo $value['prix_offre'] ?> $</span>
                         <a href="cart.php" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
                     </div>
                 </div>
@@ -91,4 +91,5 @@ $listproduit = $produit->listproduit();
         <?php include 'includes/footer.php'; ?>
     </section>
 </body>
+
 </html>

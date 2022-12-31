@@ -52,60 +52,76 @@
         </nav>
 
     </section>
-    <section class="flex flex-col justify-around items-center w-full p-4" >
-        <h1 class=" text-center font-extrabold text-blue-800 text-2xl">Product</h1>
-        <div class=" flex flex-col justify-center  w-fit text-center rounded">
-            <div class="flex flex-col w-60 h-72 rounded justify-between  shadow-lg  ">
-                <div class="p-4 m-2 flex flex-col text-center text-white hover:scale-110">
 
-                    <img src="../../assets/image/accessorie1.png" alt="product-img">
+    <h1 class="text-center font-extrabold text-blue-800 text-2xl">Product</h1>
+    <section class="flex flex-row flex-wrap p-4 gap-4 my-4">
+        <div class=" flex flex-col text-center items-center justify-between ">
+            <div class=" rounded-lg w-60 h-72 flex flex-col items-center justify-between shadow-lg ">
+                <div class=" flex flex-col text-center items-center justify-between gap-8">
+                    <img src="../../assets/image/accessorie2.png" alt="product">
+                    <p class="font-bold text-lg sticky ">Name</p>
                 </div>
-                <div class="flex flex-row justify-between sticky bg-black h-8  items-center rounded-b-lg">
-                    <div class="flex flex-row justify-evenly gap-5 text-white">
-
-                        <p>10 $</p>
-                        <p>50</p>
+                <div class="flex flex-row bg-black text-white w-full justify-between p-2 sticky rounded-b-lg">
+                    <div class="flex flex-row items-center justify-around gap-2">
+                        <p>price</p>
+                        <p>quantity</p>
                     </div>
-                    <div class="flex flew-row justify-between gap-4 px-2 text-white">
+                    <div class="flex flex-row items-center justify-around gap-2">
                         <a href="">
                             <i class="fa-solid fa-pen-to-square"></i>
                         </a>
-                        <a href=""><i class="fa-solid fa-eye-slash"></i></a>
+                        <a href="">
+                            <a href=""><i class="fa-solid fa-eye-slash"></i></a>
+                        </a>
                     </div>
                 </div>
-
-            </div>
-            <div>
-                <p class="font-bold text-lg">Name</p>
             </div>
 
         </div>
-
-
-
-    </section>
-    <section>
         <div class=" flex flex-col text-center items-center justify-between ">
-            <div class=" rounded-lg w-60 h-64 flex flex-col items-center justify-between shadow-lg ">
+            <div class=" rounded-lg w-60 h-72 flex flex-col items-center justify-between shadow-lg ">
                 <div class=" flex flex-col text-center items-center justify-between gap-8">
-        <img src="../../assets/image/accessorie2.png" alt="product">
-        <p class="font-bold text-lg sticky ">Name</p>
-        </div>
-        <div class="flex flex-row bg-black text-white w-full justify-between p-2 sticky rounded-b-lg">
-            <div class="flex flex-row items-center justify-around gap-2">
-                <p>price</p>
-                <p>quantity</p>
+                    <img src="../../assets/image/accessorie2.png" alt="product">
+                    <p class="font-bold text-lg sticky ">Name</p>
+                </div>
+                <div class="flex flex-row bg-black text-white w-full justify-between p-2 sticky rounded-b-lg">
+                    <div class="flex flex-row items-center justify-around gap-2">
+                        <p>price</p>
+                        <p>quantity</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-around gap-2">
+                        <a href="">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                        <a href="">
+                            <a href=""><i class="fa-solid fa-eye-slash"></i></a>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="flex flex-row items-center justify-around gap-2">
-                <a href="">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                </a>
-                <a href="">
-                    <a href=""><i class="fa-solid fa-eye-slash"></i></a>
-                </a>
+
+        </div>
+        <div class=" flex flex-col text-center items-center justify-between ">
+            <div class=" rounded-lg w-60 h-72 flex flex-col items-center justify-between shadow-lg ">
+                <div class=" flex flex-col text-center items-center justify-between gap-8">
+                    <img src="../../assets/image/accessorie2.png" alt="product">
+                    <p class="font-bold text-lg sticky ">Name</p>
+                </div>
+                <div class="flex flex-row bg-black text-white w-full justify-between p-2 sticky rounded-b-lg">
+                    <div class="flex flex-row items-center justify-around gap-2">
+                        <p>price</p>
+                        <p>quantity</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-around gap-2">
+                        <a href="">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                        <a href="">
+                            <a href=""><i class="fa-solid fa-eye-slash"></i></a>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
 
         </div>
     </section>

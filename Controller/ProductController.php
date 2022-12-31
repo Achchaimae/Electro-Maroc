@@ -60,5 +60,15 @@ class ProductController
                 }
         }
     }
+    public function listdesc()
+    {
+        $result = $this->product->listdesc();
+        return $result;
+    }
+    public function listasc()
+    {
+        $result = $this->product->listasc();
+        return $result;
+    }
 }
 

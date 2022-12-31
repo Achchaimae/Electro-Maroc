@@ -32,16 +32,28 @@ class ProductModel extends dbh{
     }
    
     public function deleteproduit($id){
-        $sql = "delete from produit where id=?";
+        $sql = "DELETE from produit where id=?";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$id]);
     }
 
     public function searchproduit($libelle){
-        $sql = "select * from produit where nom like '%$libelle%'";
+        $sql = "SELECT * from produit where nom like '%$libelle%'";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute();
         return $stmt;
+    }
+    public function listdesc(){
+        $sql = "SELECT * from produit order by prix_offre desc";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute();
+       return $stmt->fetchAll();
+    }
+    public function listasc(){
+        $sql = "SELECT * from produit order by prix_offre asc";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute();
+       return $stmt->fetchAll();
     }
 
 } 
