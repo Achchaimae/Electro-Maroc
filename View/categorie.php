@@ -1,3 +1,8 @@
+<?php
+include('../Controller/CategorieController.php');
+$produit = new categorieController();
+$listcategorie = $produit->listcategorie();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href=""> -->
     <script src="https://kit.fontawesome.com/93e0a23dda.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../assets/css/Dashbord.css">
-    <link rel="stylesheet" href="../../assets/build/output.css">
+    <link rel="stylesheet" href="../assets/css/Dashbord.css">
+    <link rel="stylesheet" href="../assets/build/output.css">
     <title>categories</title>
 </head>
 
@@ -19,7 +24,7 @@
         <nav class="bg-white border-gray-200 dark:bg-gray-900">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
                 <a href="" class="flex items-center">
-                    <img src="../../assets/image/mobile logo.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+                    <img src="../assets/image/mobile logo.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
                     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
                 </a>
                 <div class="flex items-center">
@@ -36,7 +41,7 @@
                 <div class="flex items-center">
                     <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium gap-4">
                         <li>
-                            <a href="../Dashbord.php" class="text-gray-900 dark:text-white hover:underline text-lg font-bold" aria-current="page">commande</a>
+                            <a href="Dashbord.php" class="text-gray-900 dark:text-white hover:underline text-lg font-bold" aria-current="page">commande</a>
                         </li>
                         <li>
                             <a href="client.php" class="text-gray-900 dark:text-white hover:underline text-lg font-bold">Client</a>

@@ -1,5 +1,5 @@
 <?php
-include_once '../Model/ProductModel.php';
+require_once '../Model/ProductModel.php';
 class ProductController
 {
    protected $product;

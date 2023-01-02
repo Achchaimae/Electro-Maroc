@@ -1,3 +1,8 @@
+<?php
+include('../Controller/productController.php');
+$produit = new productController();
+$listproduit = $produit->listproduit();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,262 +10,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link to CSS file -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <!-- link tailwind css -->
-    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href=""> -->
+    <script src="https://kit.fontawesome.com/93e0a23dda.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/Dashbord.css">
     <link rel="stylesheet" href="../assets/build/output.css">
     <!-- link to font awesome -->
     <script src="https://kit.fontawesome.com/93e0a23dda.js" crossorigin="anonymous"></script>
-    <title>home</title>
+    <title>command</title>
 </head>
 
 <body>
-    <section class="hero ">
-        <div class="left-nav">
-            <div class="logo">
-                <a href="../index.php"><img src="../assets/image/mobile logo.png" alt="logo"></a>
-            </div>
+    <section class="bg-white ">
 
-        </div>
-
-        <div class="search-bar">
-            <input type="search" class="search" name="search" placeholder="search your item">
-            <i class="fa-solid fa-search"></i>
-        </div>
-        <div class="icons">
-            <div class="icon-item">
-                <a href="login.php">
-                    <i class="fa-solid fa-user"></i>
+        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
+                <a href="#" class="flex items-center">
+                    <img src="../assets/image/mobile logo.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
                 </a>
+                <div class="flex items-center">
+                    <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-500 dark:text-white hover:underline">(555) 412-1234</a>
+                    <a href="../index.php?a=log" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Logout</a>
+                </div>
             </div>
-            <div>
-                <a href="cart.php">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
+        </nav>
+        <nav class="bg-gray-50 dark:bg-gray-700 ">
+
+            <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
+                <div class="flex items-center text-center">
+                    <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium gap-4 ">
+                        <li>
+                            <a href="Dashbord.php" class="text-gray-900 dark:text-white hover:underline text-lg font-bold " aria-current="page">commande</a>
+                        </li>
+                        <li>
+                            <a href="client.php" class="text-gray-900 dark:text-white hover:underline text-lg font-bold ">Client</a>
+                        </li>
+                        <li>
+                            <a href="categorie.php" class="text-gray-900 dark:text-white hover:underline text-lg font-bold ">Categorie</a>
+                        </li>
+                        <li>
+                            <a href="product.php" class="text-gray-900 dark:text-white hover:underline text-lg font-bold ">Produit</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
+
     </section>
-    <!-- <section class="categrories">
-        <div class="title m-2">
-            <p>categories</p>
-        </div>
 
-        <div class="all-categories">
-            <div class="categ-item ease-in-out duration-300">
-                <p>laptop</p>
-                <img src="../assets/image/laptop.png" alt="laptop">
-            </div>
-            <div class="categ-item ease-in-out duration-300">
-                <p>camera</p>
-                <img src="../assets/image/camera.png" alt="mobile">
-            </div>
-            <div class="categ-item ease-in-out duration-300 access-catego">
-                <p>Accessories</p>
-                <img src="../assets/image/accessories.png" alt="headphone">
-            </div>
-            <div class="categ-item ease-in-out duration-300 tv-catego">
-                <p>TV</p>
-                <img src="../assets/image/tv.png" alt="mobile">
-            </div>
-            <div class="categ-item ease-in-out duration-300 headset-catego">
-                <p>Headphones</p>
-                <img src="../assets/image/headset.png" alt="mobile">
-            </div>
-            <div class="categ-item ease-in-out duration-300">
-                <p>Storage</p>
-                <img src="../assets/image/storage.png" alt="mobile">
-            </div>
-            <div class="categ-item ease-in-out duration-300">
-                <p>Home Theater</p>
-                <img src="../assets/image/homeset.png" alt="mobile">
-            </div>
-        </div>
-    </section> -->
-    <section class="product-p mt-8">
-        <div class="product">
-        <div class="about-product">
-            <div >
-                <div>
-                    <img src="../assets/image/headset2.png" alt="headset" class="rounded bg-slate-500 m-2 w-60 p-4">
+    <h1 class="text-center font-extrabold text-blue-800 text-2xl">Product</h1>
+    <section class="flex flex-row flex-wrap p-4 gap-4 my-4">
+    <?php foreach ($listproduit as $key => $value) { ?>
+        <div class=" flex flex-col text-center items-center justify-between ">
+            <div class=" rounded-lg w-60 h-72 flex flex-col items-center justify-between shadow-lg ">
+                <div class=" flex flex-col text-center items-center justify-between gap-8">
+                    <img src="../assets/image/accessorie2.png" alt="product">
+                    <p class="font-bold text-lg sticky ">  <?php echo $value['libelle'] ?></p>
                 </div>
-                <div class="product-img">
-                    <img src="../assets/image/headset2.png" alt="headset" class="rounded bg-slate-500 m-2 w-16 p-2">
-                    <img src="../assets/image/headset2.png" alt="headset" class="rounded bg-slate-500 m-2 w-16 p-2">
-                    <img src="../assets/image/headset2.png" alt="headset" class="rounded bg-slate-500 m-2 w-16 p-2">
+                <div class="flex flex-row bg-black text-white w-full justify-between p-2 sticky rounded-b-lg">
+                    <div class="flex flex-row items-center justify-around gap-2">
+                        <p>  <?php echo $value['prix_final'] ?> $</p>
+                        <p> <?php echo $value['quantite'] ?> qty</p>
+                    </div>
+                    <div class="flex flex-row items-center justify-around gap-2">
+                        <a href="">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                        <a href="">
+                            <a href=""><i class="fa-solid fa-eye-slash"></i></a>
+                        </a>
+                    </div>
                 </div>
             </div>
-            
-            <div class="info-product">
-                <h3 class="font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
-                dignissim, metus nec fringilla accumsan, risus sem</h3>
-                <div class="tobuy">
-                <div class="text-red flex-row justify-between">
-                   
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                    <i class="fa-solid fa-star  text-yellow-500"></i>
-                    <i class="fa-solid fa-star  text-yellow-500"></i>
-                    <i class="fa-solid fa-star  text-yellow-500"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <button class="price-btn bg-blue-800 rounded-md p-2 text-white font-bold"><span class="text-red-600"> -10% </span> 59 $</button>
-                <h3 class="font-semibold">Free Shipping</h3>
-                <p>From China to Morocco via Cainiao Super Economy for Special Goods
-                    Estimated delivery on Feb 19</p>
-            </div>
-            </div>
+
         </div>
-        <div class="receipt rounded p-2 ">
-            <p class="font-5/16 font-bold text-6xl">59 $</p>
-            <p class="text-green-600 font-medium ">In stock</p>
-            <p class="text-base">delevery December 21 - 28</p>
-            <select name="quantite" value="quantite" class="text-blue-800 border-blue-800 rounded p-1 ">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-            <button class="border-solid border-2 border-blue-800 p-2 rounded-lg hover:bg-blue-800 hover:text-white">
-                <a href="cart.php">add to cart</a> 
-            </button>
-            <button class="bg-blue-800 text-white rounded p-3 hover:bg-blue-900" onclick="alert('Your order is placed')">Buy Now</button>
-        </div>
-    </div>
-    <div class=" w-8/12 m-6 ">
-        <p >About this item <br></p> 
-            <div class="w-8/12 m-4">           
-                <li>
-                    IMPRESSIVE SOUND QUALITY: Riwbox XBT-80 is a bluetooth headphone features with a 50mm large diameter aperture drivers and bliit-in high detail microphone. Wide frequency range reproduces precise deep base and high clarity sound. You can expect comf
-                </li>
-                <li>
-                    BUILT TO STAY COMFORTABLE:The Memory-protein ear cushion simliate human skin texture, ensuring lasting comfort. The stainless steel slider and softly padded headband allows you to find the perfect fit without constraint and provide excellent durability.
-                </li>
-                <li>
-                    NEVER POWER OFF, BOTH WIRELESS & WIRED: 1. The wireless mode: A built-in 420mAh battery provides up to 13-hr music time/15-hr talking time in a single charge; 2. The Wired mode: you can also use it as a wired headphone with the provided audio cable so the headphones will never power off.
-                </li>
-                <li>
-                    TAKE YOUR TUNES TO GO: Space-saving foldable design not only saves space but also makes it portable. Best choice to take it study, out
-                </li>
-                <li>
-                Riwbox Bluetooth headphones XBT-80 fit the modern city lifestyle for everybody, no matter you are office worker or student, teenager or girls.Devices with all sorts of smart phones, tablets, computer or music player.
-                </li>
-            </div>
-    <b>Note: Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing.</b>
-    </div>
-    </section>
-    <section>
-        <footer class="footer">
-            <div class="footer__addr">
-                <h1 class="footer__logo">
-                    <img src="../assets/image/mobile logo.png" alt="">
-                </h1>
-
-                <h2><b>Contact</b></h2>
-
-                <address>
-                    5534 Somewhere In. The World 22193-10212<br>
-
-                    <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
-                </address>
-            </div>
-
-            <ul class="footer__nav">
-                <li class="nav__item">
-                    <h2 class="nav__title"><b>Know Us</b></h2>
-
-                    <ul class="nav__ul">
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Contact Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Press
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Careers
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Elexo Earn
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="nav__item nav__item--extra">
-                    <h2 class="nav__title"><b>Policy</b></h2>
-
-                    <ul class="nav__ul nav__ul--extra">
-                        <li>
-                            <a href="#">
-                                Security
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Privacy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Term of use
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Return policy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Complience
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav__item">
-                    <h2 class="nav__title"><b>Social</b></h2>
-
-                    <ul class="nav__ul">
-                        <li>
-                            <a href="#">Facebbok</a>
-                        </li>
-                        <li>
-                            <a href="#">Instagram</a>
-                        </li>
-                        <li>
-                            <a href="#">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="#">Youtube</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-
-            <div class="legal">
-                <p>&copy; 2019 Something. All rights reserved.</p>
-
-                <div class="legal__links">
-                    <span>Made with <span class="heart">♥</span> by Achchcaimae Khalaf</span>
-                </div>
-            </div>
-        </footer>
+      
+<?php  }
+        ?>
     </section>
 </body>
 
 </html>
+

@@ -3,8 +3,8 @@
 session_start() ;
 
 require_once 'Controller/LoginController.php';
-include 'Controller/ProductController.php';
-include 'Controller/CategorieController.php';
+// include 'Controller/ProductController.php';
+// include 'Controller/CategorieController.php';
 
 // $commande = new CommandeController();
 // $login = new LoginController();

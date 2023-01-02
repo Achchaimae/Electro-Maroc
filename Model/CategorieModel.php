@@ -1,5 +1,5 @@
 <?php
-include_once 'classes/Database.php';
+include_once '../classes/Database.php';
 class Categorie extends dbh{
     public function AjouterCategorie($nom,$description,$photo){
         $sql = "insert into categorie (nom,description,photo) values(?,?,?)";

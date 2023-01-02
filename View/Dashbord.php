@@ -46,13 +46,13 @@ $listproduit = $produit->listproduit();
                             <a href="#" class="text-gray-900 dark:text-white hover:underline text-lg font-bold" aria-current="page">commande</a>
                         </li>
                         <li>
-                            <a href="includes/client.php" class="text-gray-900 dark:text-white hover:underline text-lg font-bold">Client</a>
+                            <a href="client.php" class="text-gray-900 dark:text-white hover:underline text-lg font-bold">Client</a>
                         </li>
                         <li>
-                            <a href="includes/categorie.php" class="text-gray-900 dark:text-white hover:underline text-lg font-bold">Categorie</a>
+                            <a href="categorie.php" class="text-gray-900 dark:text-white hover:underline text-lg font-bold">Categorie</a>
                         </li>
                         <li>
-                            <a href="includes/product.php" class="text-gray-900 dark:text-white hover:underline text-lg font-bold">Produit</a>
+                            <a href="product.php" class="text-gray-900 dark:text-white hover:underline text-lg font-bold">Produit</a>
                         </li>
                     </ul>
                 </div>
@@ -61,7 +61,7 @@ $listproduit = $produit->listproduit();
 
     </section>
     <section>
-        <?php include('includes/commande.php'); ?>
+        <?php include('commande.php'); ?>
     </section>
 
 </body>

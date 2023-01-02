@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href=""> -->
     <script src="https://kit.fontawesome.com/93e0a23dda.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../assets/css/Dashbord.css">
-    <link rel="stylesheet" href="../../assets/build/output.css">
+    <link rel="stylesheet" href="../assets/css/Dashbord.css">
+    <link rel="stylesheet" href="../assets/build/output.css">
     <title>commande</title>
 </head>
 

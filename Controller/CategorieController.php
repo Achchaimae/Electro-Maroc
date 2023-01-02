@@ -1,5 +1,5 @@
 <?php
-include_once 'Model/CategorieModel.php';
+include_once '../Model/CategorieModel.php';
 class CategorieController
 {
    protected $categorie;
