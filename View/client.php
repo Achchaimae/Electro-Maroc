@@ -1,3 +1,8 @@
+<?php
+include('../Controller/ClientController.php');
+$client = new ClientController();
+$listclient = $client->listclient();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -84,30 +89,32 @@
 
                 </tr>
               </thead>
+              <?php foreach ($listclient as $key => $value) { ?>
               <tbody>
                 <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"> <?php echo $value['id'] ?></td>
                   <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    Mark
+                  <?php echo $value['nom'] ?>  <?php echo $value['prenom'] ?>
                   </td>
                   <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    Otto
+                  <?php echo $value['telephone'] ?>
                   </td>
                   <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    @mdo
+                  <?php echo $value['adresse'] ?>
                   </td>
                   <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    Mark
+                  <?php echo $value['ville'] ?>
                   </td>
                   <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    Otto
+                  <?php echo $value['email'] ?>
                   </td>
                   <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                    @mdo
+                  <?php echo $value['password'] ?>
                   </td>
                 </tr>
 
               </tbody>
+              <?php  } ?>
             </table>
           </div>
         </div>
@@ -116,5 +123,4 @@
   </section>
 
 </body>
-
 </html>

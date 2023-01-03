@@ -1,5 +1,5 @@
 <?php
-include_once 'classes/Database.php';
+include_once '../classes/Database.php';
 class CommandeModel extends dbh{
 
     public function listCommande(){
@@ -11,8 +11,7 @@ class CommandeModel extends dbh{
         return $resulta;
         
     }
-    // id	date_creation	date_envoi	date_livraison	client_id	prix_unitaire	quantite	prix_total_produit	prix_total_commande
-    public function getDemande($id){
+    public function getCommande($id){
 
         $sql = "select * from commande where id = $id";
         $stmt = $this->connect()->prepare($sql);
@@ -28,7 +27,7 @@ class CommandeModel extends dbh{
         $stmt->execute();
         
     }
-    public function hide($id){
+    public function hidecommande($id){
         
         $sql = "update commande set status = 0 where id=$id";
         $stmt = $this->connect()->prepare($sql);

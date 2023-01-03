@@ -26,7 +26,7 @@ $listproduit = $produit->listproduit();
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
                 <a href="#" class="flex items-center">
                     <img src="../assets/image/mobile logo.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
                 </a>
                 <div class="flex items-center">
                     <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-500 dark:text-white hover:underline">(555) 412-1234</a>

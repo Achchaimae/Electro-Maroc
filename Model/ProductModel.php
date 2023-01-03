@@ -1,7 +1,7 @@
 <?php
 include_once '../classes/Database.php';
 class ProductModel extends dbh{
-    // libelle	code_barre	prix_achat	prix_final	prix_offre	description	photo	categorie_id	
+  	
     public function Ajouter($ref,$libelle,$code_barre,$prix_achat,$prix_final,$prix_offre,$description,$photo,$categorie_id){
         $sql = "insert into produit (ref,libelle,code_barre,prix_achat,prix_final,prix_offre,description,photo,categorie_id) values(?,?,?,?,?,?,?,?,?)";
         $stmt = $this->connect()->prepare($sql);
