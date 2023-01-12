@@ -1,10 +1,11 @@
-<?php 
- include ('../Controller/ProductController.php');
-    $produit = new ProductController();
-    $listproduit = $produit->getproduit($_GET['id']);
- ?>
+<?php
+include('../Controller/ProductController.php');
+$produit = new ProductController();
+$listproduit = $produit->getproduit($_GET['id']);
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,27 +13,46 @@
     <link rel="stylesheet" href="../assets/css/mystyle.css">
     <title>Update</title>
 </head>
-<body>      
-   
-    
-<section class="updateform">
-       
-            <form action="../index.php" method="POST" class="updatefile">
-            <input type="hidden" name="id" value="<?php echo $listproduit['id'] ?>">
-            <label for="nom">nom</label>
-            <input type="text" name="nom" placeholder="nom" value="<?= $listproduit['nom'] ?>">
-            <label for="prix">prix</label>
-            <input type="number" name="prix" placeholder="prix" value="<?php echo $listproduit['prix'] ?>">
-            <label for="quantite">quantite</label>
-            <input type="number" name="quantite" placeholder="quantite" value="<?php echo $listproduit['quantite'] ?>">
-            <label for="description">description</label>
-            <textarea name="description"  cols="30" rows="10" placeholder="description"><?php echo $listproduit['description'] ?></textarea>
-            <label for="image">image</label>
-            <input type="file" name="image" placeholder="image" src="<?php echo $listproduit['image'] ?>">
-            <input type="submit" name="update" value="update">
-        
-        </form>
 
-</section>
+<body>
+
+
+    <section class="updateform">
+
+        <form action="../index.php" method="POST" class="updatefile">
+            <input type="hidden" name="id" value="<?php echo $listproduit['id'] ?>">
+
+            <label for="ref">ref</label>
+            <input type="text" name="ref" placeholder="ref" value="<?= $listproduit['ref'] ?>">
+
+            <label for="libelle">libelle</label>
+            <input type="number" name="libelle" placeholder="libelle" value="<?php echo $listproduit['libelle'] ?>">
+
+            <label for="code_barre">code_barre</label>
+            <input type="number" name="code_barre" placeholder="code_barre" value="<?php echo $listproduit['code_barre'] ?>">
+
+            <label for="prix_achat">prix_achat</label>
+            <input name="prix_achat" placeholder="prix_achat" value="<?php echo $listproduit['prix_achat'] ?>">
+
+            <label for="prix_final">prix_final</label>
+            <input name="prix_final" placeholder="prix_final" value="<?php echo $listproduit['prix_final'] ?>">
+
+            <label for="prix_offre">prix_offre</label>
+            <input name="prix_offre" placeholder="prix_offre" value="<?php echo $listproduit['prix_offre'] ?>">
+
+            <label for="description">description</label>
+            <textarea name="description" cols="30" rows="10" placeholder="description"><?php echo $listproduit['description'] ?></textarea>
+
+            <label for="photo">photo</label>
+            <input type="file" name="photo" placeholder="photo" src="<?php echo $listproduit['photo'] ?>">
+            <img src="<?php echo $listproduit['photo'] ?>" alt="">
+            <label for="categorie_id">categorie_id</label>
+            <input type="number" name="categorie_id" placeholder="categorie_id" value="<?php echo $listproduit['categorie_id'] ?>">
+
+            <input type="submit" name="updateP" value="update">
+
+        </form>
+    </section>
 </body>
+
 </html>

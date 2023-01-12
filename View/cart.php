@@ -27,7 +27,8 @@ if (!isset($_SESSION['email'])) {
         <div class="cart-info">
             <div class="ship-info ">
                 <h1 class="font-bold text-2xl">Shipping Address</h1><br>
-                <p>Achchaimae khalaf+212 682751559</p><br>
+                <p>Achchaimae khalaf</p><br>
+                <p> +212 682751559</p><br>
                 <p>Lots wiaam 2 rue 33 n 2</p><br>
                 <p> SAFI, Marrakech - Safi, Morocco, 40060</p>
             </div>

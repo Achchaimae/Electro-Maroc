@@ -59,7 +59,7 @@ $listproduit = $produit->listproduit();
     </section>
 
     <h1 class="text-center font-extrabold text-blue-800 text-2xl">Product</h1>
-    <a href="#" class="px-4 py-1 text-sm text-green-400 bg-green-200 rounded-full m-4">add</a>
+    <a href="ajoutP.php" class="px-4 py-1 text-sm text-green-400 bg-green-200 rounded-full m-4">add</a>
     <section class="flex flex-row flex-wrap p-4 gap-4 my-4">
         <?php foreach ($listproduit as $key => $value) { ?>
             <div class=" flex flex-col text-center items-center justify-between ">
@@ -74,11 +74,11 @@ $listproduit = $produit->listproduit();
                             <p> <?php echo $value['quantite'] ?> qty</p>
                         </div>
                         <div class="flex flex-row items-center justify-around gap-2">
-                            <a href="">
+                            <a href="updateP.php?id=<?php echo $value['id']; ?>">
                                 <i class="fa-solid fa-pen-to-square"></i>
                             </a>
-                            <a href="">
-                                <a href=""><i class="fa-solid fa-eye-slash"></i></a>
+                            <a href="../index.php?id=<?php echo $value['id']; ?>&deleteP=true">
+                                <i class="fa-solid fa-eye-slash"></i>
                             </a>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 <?php
-include_once '../classes/Database.php';
+include_once 'C:\xampp\htdocs\Electro-Maroc\classes\DataBase.php';
 class ProductModel extends dbh{
   	
     public function Ajouter($ref,$libelle,$code_barre,$prix_achat,$prix_final,$prix_offre,$description,$photo,$categorie_id){

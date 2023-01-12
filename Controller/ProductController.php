@@ -1,5 +1,5 @@
 <?php
-require_once '../Model/ProductModel.php';
+require_once 'C:\xampp\htdocs\Electro-Maroc\Model\ProductModel.php';
 class ProductController
 {
    protected $product;
