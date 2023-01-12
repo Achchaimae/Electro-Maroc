@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/93e0a23dda.js" crossorigin="anonymous"></script>
     <title>home</title>
 </head>
-<body >
+<body class="bg-blue-100">
      <section class="hero ">
         <div class="left-nav">
             <div class="logo">

@@ -59,36 +59,36 @@ $listproduit = $produit->listproduit();
     </section>
 
     <h1 class="text-center font-extrabold text-blue-800 text-2xl">Product</h1>
+    <a href="#" class="px-4 py-1 text-sm text-green-400 bg-green-200 rounded-full m-4">add</a>
     <section class="flex flex-row flex-wrap p-4 gap-4 my-4">
-    <?php foreach ($listproduit as $key => $value) { ?>
-        <div class=" flex flex-col text-center items-center justify-between ">
-            <div class=" rounded-lg w-60 h-72 flex flex-col items-center justify-between shadow-lg ">
-                <div class=" flex flex-col text-center items-center justify-between gap-8">
-                    <img src="../assets/image/accessorie2.png" alt="product">
-                    <p class="font-bold text-lg sticky ">  <?php echo $value['libelle'] ?></p>
-                </div>
-                <div class="flex flex-row bg-black text-white w-full justify-between p-2 sticky rounded-b-lg">
-                    <div class="flex flex-row items-center justify-around gap-2">
-                        <p>  <?php echo $value['prix_final'] ?> $</p>
-                        <p> <?php echo $value['quantite'] ?> qty</p>
+        <?php foreach ($listproduit as $key => $value) { ?>
+            <div class=" flex flex-col text-center items-center justify-between ">
+                <div class=" rounded-lg w-60 h-72 flex flex-col items-center justify-between shadow-lg ">
+                    <div class=" flex flex-col text-center items-center justify-between gap-8">
+                        <img src="../assets/image/accessorie2.png" alt="product">
+                        <p class="font-bold text-lg sticky "> <?php echo $value['libelle'] ?></p>
                     </div>
-                    <div class="flex flex-row items-center justify-around gap-2">
-                        <a href="">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                        </a>
-                        <a href="">
-                            <a href=""><i class="fa-solid fa-eye-slash"></i></a>
-                        </a>
+                    <div class="flex flex-row bg-black text-white w-full justify-between p-2 sticky rounded-b-lg">
+                        <div class="flex flex-row items-center justify-around gap-2">
+                            <p> <?php echo $value['prix_final'] ?> $</p>
+                            <p> <?php echo $value['quantite'] ?> qty</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-around gap-2">
+                            <a href="">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                            <a href="">
+                                <a href=""><i class="fa-solid fa-eye-slash"></i></a>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
-        </div>
-      
-<?php  }
+        <?php  }
         ?>
     </section>
 </body>
 
 </html>
-

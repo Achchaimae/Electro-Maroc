@@ -57,7 +57,7 @@ $listclient = $client->listclient();
 
   </section>
   <section class="flex flex-col justify-around items-center w-full p-4">
-    <h1 class="text-center font-extrabold text-blue-800 text-2xl">Product</h1>
+    <h1 class="text-center font-extrabold text-blue-800 text-2xl">Client</h1>
     <div class="flex flex-col w-4/5 m-auto">
       <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">

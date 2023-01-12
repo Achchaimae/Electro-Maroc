@@ -19,7 +19,7 @@ $listcommande = $commande->listCommande();
 
 <body class="flex flex-row justify-between ">
 <h1 class="text-center font-extrabold text-blue-800 text-2xl m-4">Commande of the day</h1>
-<a href="#" class="px-4 py-1 text-sm text-green-400 bg-green-200 rounded-full m-4">add</a>
+<!--     -->
 
     <section class="flex  flex-col justify-around items-center w-full p-4">
 

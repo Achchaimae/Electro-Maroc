@@ -24,7 +24,9 @@ $listproduit = $produit->listproduit();
 </head>
 
 <body class="bg-blue-100 ">
-    <?php include_once 'includes/header.php'; ?>
+    <section>
+        <?php include_once 'includes/header.php'; ?>
+    </section>
     <section class="flex flex-row justify-center gap-2 m-2">
 
         <select id="countries" class="my-auto w-1/6 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
@@ -47,13 +49,13 @@ $listproduit = $produit->listproduit();
         <?php foreach ($listproduit as $key => $value) { ?>
 
             <div class="w-full h-auto max-w-sm  py-4 bg-white rounded-lg shadow-md my-auto ">
-                <a href="product.php" class="flex justify-center">
+                <div class="flex justify-center hover:scale-110">
                     <img class="p-8 rounded-t-lg -center" src="../assets/image/accessorie2.png " alt="product image" />
-                </a>
+                </div>
                 <div class="px-5 pb-5">
-                    <a href="product.php">
+                   
                         <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-black"> <?php echo $value['libelle'] ?></h5>
-                    </a>
+                    
                     <div class="flex items-center mt-2.5 mb-5">
                         <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <title>First star</title>
@@ -79,6 +81,7 @@ $listproduit = $produit->listproduit();
                     </div>
                     <div class="flex items-center justify-between">
                         <span class="text-3xl font-bold text-gray-900 dark:text-black"><?php echo $value['prix_offre'] ?> $</span>
+                        <a href="clientProduct.php" class="text-blue-700 bg-white rounded-lg p-2 border border-blue-700 hover:border-indigo-300  hover:bg-blue-500 hover:text-white focus:ring-4 focus:outline-none">more Details</a>
                         <a href="cart.php" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
                     </div>
                 </div>
