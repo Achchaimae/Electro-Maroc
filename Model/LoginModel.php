@@ -23,5 +23,14 @@ class LoginModel extends dbh{
         return $results;
        
     }
+    public function checkclient($email,$password){
+        $sql = "SELECT * FROM client WHERE email='$email' and password = '$password'";
+        //connect do the connection with db
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute(); 
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $results;
+       
+    }
 }
 ?>
